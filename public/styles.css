@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #262722;
+}
+
+h1 {
+  text-align: center;
+  color: #f0f0f0;
+  margin-bottom: 60px;
+  font-size: 40px;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.square {
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 5px 5px 8px rgb(151, 151, 151);
+}
+
+.square:hover {
+  background-color: #a0a0a0;
+  transform: scale(0.95);
+}
+
+.status {
+  margin-bottom: 50px;
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+.status.winner {
+  color: green;
+}
+
+.status.draw {
+  color: orange;
+}
+
+.new-game {
+  display: block;
+  margin: 50px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #919191;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.new-game:hover {
+  background-color: #4caf50;
+}
+
+.reset {
+  margin: 50px auto;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #919191;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  border-radius: 5px;
+}
+
+.reset:hover {
+  background-color: #0e0e0e;
+}
+
+.animated {
+  animation-name: bounce;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
